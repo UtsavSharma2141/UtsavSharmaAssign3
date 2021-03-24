@@ -1,7 +1,30 @@
 <!--Utsav Sharma n01392141 section C -->
 <resources>
+    <color name="lime">#00FF7F</color>
+    <color name="blue">#00CED1</color>
+    <color name="yellow">#FFFFE0</color>
     <string name="app_name">Utsav Sharma n01392141</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_blank_fragment">Utsav Sharma n01392141</string>
+    <string name="tab1_nav_menu">Tab1</string>
+    <string name="tab2_nav_menu">Tab2</string>
+    <string name="tab3_nav_menu">Tab3</string>
+    <string name="builder_exit_message">Do you want to exit the app?</string>
+    <string name="yes_msg">Yes</string>
+    <string name="no_msg">No</string>
+
+    <string-array name="colorsArr">
+        <item>Blue</item>
+        <item>Red</item>
+        <item>Yellow</item>
+    </string-array>
+
+    <string-array name="widthArr">
+        <item>15</item>
+        <item>30</item>
+        <item>40</item>
+    </string-array>
+
+
+
 
 </resources>

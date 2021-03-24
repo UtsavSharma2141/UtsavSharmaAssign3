@@ -1,14 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/lime"
     tools:context=".UtsavFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ImageView
+        android:id="@+id/utsav_main_img"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:src="@drawable/tiger"
+        android:layout_marginTop="70dp"
+        />
+
+
+    <utsav.sharma.n01392141.CanvasView
+        android:id="@+id/utsav_canvas"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        />
 
-</FrameLayout>
+
+    <TextView
+        android:id="@+id/utsav_main_text"
+        android:text="@string/hello_blank_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:textColor="#FF0000"
+        android:textSize="20sp"
+        android:gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/utsav_colorSpin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            />
+
+        <Spinner
+            android:id="@+id/utsav_widthSpin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/utsav_setBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="set"/>
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/utsav_resetBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="-101dp"
+        android:layout_marginBottom="53dp"
+        android:text="reset" />
+
+
+</RelativeLayout>

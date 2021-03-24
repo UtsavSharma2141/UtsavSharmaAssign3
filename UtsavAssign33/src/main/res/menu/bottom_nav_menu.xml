@@ -3,12 +3,15 @@
 
 
     <item
+        android:id="@+id/utsav_nav_tab1"
         android:icon="@drawable/ic_brush_24px"
-        android:title="Tab1" />
+        android:title="@string/tab1_nav_menu" />
     <item
+        android:id="@+id/utsav_nav_tab2"
         android:icon="@drawable/ic_task_24px"
-        android:title="Tab2" />
+        android:title="@string/tab2_nav_menu" />
     <item
+        android:id="@+id/utsav_nav_tab3"
         android:icon="@drawable/ic_animation_24px"
-        android:title="Tab3" />
+        android:title="@string/tab3_nav_menu" />
 </menu>
