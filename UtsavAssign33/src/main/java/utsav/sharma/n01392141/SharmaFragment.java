@@ -7,6 +7,8 @@ import android.Manifest;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.drawable.AnimationDrawable;
+import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.Settings;
@@ -14,6 +16,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -31,17 +34,11 @@ import com.karumi.dexter.listener.multi.MultiplePermissionsListener;
 import java.util.List;
 
 public class SharmaFragment extends Fragment {
+    Button btn, btnstart,btnstop;
+    ImageView image;
     @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.fragment_sharma, container, false);
-        Button button = (Button)v.findViewById(R.id.utsav_permission_btn);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                requestPermissions();
-            }
-        });
         // Inflate the layout for this fragment
         return inflater.inflate(utsav.sharma.n01392141.R.layout.fragment_sharma, container, false);
     }
@@ -50,6 +47,43 @@ public class SharmaFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         // initializing our button and adding on click listener to it.
+        btn = view.findViewById(R.id.utsav_permission_btn);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                requestPermissions();
+            }
+        });
+        btnstart = view.findViewById(R.id.utsav_startBtn);
+        btnstop = view.findViewById(R.id.utsav_stopBtn);
+        image = view.findViewById(R.id.utsav_img1);
+
+        BitmapDrawable frame1 = (BitmapDrawable)getResources().getDrawable(R.drawable.tiger2);
+        BitmapDrawable frame2 = (BitmapDrawable)getResources().getDrawable(R.drawable.tiger3);
+        BitmapDrawable frame3 = (BitmapDrawable)getResources().getDrawable(R.drawable.tiger4);
+
+        final AnimationDrawable ad = new AnimationDrawable();
+        ad.addFrame(frame1,500);
+        ad.addFrame(frame2,500);
+        ad.addFrame(frame3,500);
+
+        image.setImageDrawable(ad);
+
+        btnstart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ad.start();
+                ad.setOneShot(false);
+            }
+        });
+
+        btnstop.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ad.stop();
+            }
+        });
+
 
     }
 

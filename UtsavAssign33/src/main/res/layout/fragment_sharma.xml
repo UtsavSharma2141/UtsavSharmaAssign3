@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/blue"
-    tools:context=".SharmaFragment">
+    tools:context=".SharmaFragment"
+    android:orientation="horizontal">
 
     <Button
         android:id="@+id/utsav_permission_btn"
@@ -12,5 +14,38 @@
         android:layout_height="wrap_content"
         android:text="Permissions"
         />
+       <ImageView
+        android:id="@+id/utsav_img1"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:src="@drawable/tiger2"
+        android:layout_marginTop="70dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/utsav_startBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="15dp"
+            android:text="Start"/>
+
+        <Button
+            android:id="@+id/utsav_stopBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="Stop" />
+
+
+    </LinearLayout>
+
 
 </RelativeLayout>
