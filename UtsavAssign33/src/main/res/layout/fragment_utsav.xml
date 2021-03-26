@@ -58,7 +58,7 @@
             android:id="@+id/utsav_setBtn"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="set"/>
+            android:text="@string/set_btn"/>
 
 
 
@@ -71,7 +71,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginTop="-101dp"
         android:layout_marginBottom="53dp"
-        android:text="reset" />
+        android:text="@string/reset_btn" />
 
 
 </RelativeLayout>

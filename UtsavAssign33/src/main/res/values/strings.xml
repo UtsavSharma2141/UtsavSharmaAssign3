@@ -1,6 +1,6 @@
 <!--Utsav Sharma n01392141 section C -->
 <resources>
-    <color name="lime">#00FF7F</color>
+    <color name="lime">#98FB98</color>
     <color name="blue">#00CED1</color>
     <color name="yellow">#FFFFE0</color>
     <string name="app_name">Utsav Sharma n01392141</string>
@@ -11,6 +11,8 @@
     <string name="builder_exit_message">Do you want to exit the app?</string>
     <string name="yes_msg">Yes</string>
     <string name="no_msg">No</string>
+    <string name="set_btn">set</string>
+    <string name="reset_btn">reset</string>
 
     <string-array name="colorsArr">
         <item>Blue</item>
