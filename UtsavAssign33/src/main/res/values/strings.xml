@@ -2,7 +2,8 @@
 <resources>
     <color name="lime">#98FB98</color>
     <color name="blue">#00CED1</color>
-    <color name="yellow">#FFFFE0</color>
+    <color name="yellow">#DEB887</color>
+    <color name="green">#006400</color>
     <string name="app_name">Utsav Sharma n01392141</string>
     <string name="hello_blank_fragment">Utsav Sharma n01392141</string>
     <string name="tab1_nav_menu">Tab1</string>

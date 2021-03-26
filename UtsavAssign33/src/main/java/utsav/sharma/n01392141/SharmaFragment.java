@@ -58,14 +58,28 @@ public class SharmaFragment extends Fragment {
         btnstop = view.findViewById(R.id.utsav_stopBtn);
         image = view.findViewById(R.id.utsav_img1);
 
-        BitmapDrawable frame1 = (BitmapDrawable)getResources().getDrawable(R.drawable.tiger2);
-        BitmapDrawable frame2 = (BitmapDrawable)getResources().getDrawable(R.drawable.tiger3);
-        BitmapDrawable frame3 = (BitmapDrawable)getResources().getDrawable(R.drawable.tiger4);
+        BitmapDrawable frame1 = (BitmapDrawable)getResources().getDrawable(R.drawable.tiger1);
+        BitmapDrawable frame2 = (BitmapDrawable)getResources().getDrawable(R.drawable.tiger2);
+        BitmapDrawable frame3 = (BitmapDrawable)getResources().getDrawable(R.drawable.tiger3);
+        BitmapDrawable frame4 = (BitmapDrawable)getResources().getDrawable(R.drawable.tiger4);
+        BitmapDrawable frame5 = (BitmapDrawable)getResources().getDrawable(R.drawable.tiger5);
+        BitmapDrawable frame6 = (BitmapDrawable)getResources().getDrawable(R.drawable.tiger6);
+        BitmapDrawable frame7 = (BitmapDrawable)getResources().getDrawable(R.drawable.tiger7);
+        BitmapDrawable frame8 = (BitmapDrawable)getResources().getDrawable(R.drawable.tiger8);
+        BitmapDrawable frame9 = (BitmapDrawable)getResources().getDrawable(R.drawable.tiger9);
+        BitmapDrawable frame10 = (BitmapDrawable)getResources().getDrawable(R.drawable.tiger10);
 
         final AnimationDrawable ad = new AnimationDrawable();
         ad.addFrame(frame1,500);
         ad.addFrame(frame2,500);
         ad.addFrame(frame3,500);
+        ad.addFrame(frame4,500);
+        ad.addFrame(frame5,500);
+        ad.addFrame(frame6,500);
+        ad.addFrame(frame7,500);
+        ad.addFrame(frame8,500);
+        ad.addFrame(frame9,500);
+        ad.addFrame(frame10,500);
 
         image.setImageDrawable(ad);
 

@@ -13,12 +13,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Permissions"
+        android:textColor="@color/black"
+
         />
        <ImageView
         android:id="@+id/utsav_img1"
         android:layout_width="match_parent"
         android:layout_height="350dp"
-        android:src="@drawable/tiger2"
+        android:src="@drawable/tiger1"
         android:layout_marginTop="70dp"
         />
 
@@ -34,6 +36,7 @@
             android:layout_height="match_parent"
             android:layout_marginLeft="100dp"
             android:layout_marginRight="15dp"
+            android:textColor="@color/black"
             android:text="Start"/>
 
         <Button
@@ -42,6 +45,7 @@
             android:layout_height="match_parent"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
+            android:textColor="@color/black"
             android:text="Stop" />
 
 

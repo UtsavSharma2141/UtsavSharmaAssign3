@@ -1,16 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/yellow"
+    tools:context=".N01392141Fragment"
+    tools:ignore="ExtraText">
 
-    tools:context=".N01392141Fragment">
-
-    <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id="@+id/utsav_tab3fname"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:text="Utsav"
+        android:gravity="left"
+        android:textAlignment="gravity"
+        android:textColor="@color/red"
+        android:textSize="30dp"
+        tools:ignore="MissingConstraints" />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/utsav_tab3lname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sharma"
+        android:textColor="@color/green"
+        android:textSize="30dp"
+        android:gravity="right"
+        android:textAlignment="gravity"
+        tools:ignore="MissingConstraints"
+        />
+
+    <Button
+        android:id="@+id/utsav_start_animationBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Animation"
+        android:layout_alignParentBottom="true"
+        android:padding="5dp"
+        android:layout_alignParentLeft="true"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/utsav_stop_animationBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop Animation"
+        android:padding="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+
+        tools:ignore="MissingConstraints" />
+
+
+</RelativeLayout>
