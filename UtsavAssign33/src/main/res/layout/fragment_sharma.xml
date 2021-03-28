@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:background="@color/blue"
     tools:context=".SharmaFragment"
-    android:orientation="horizontal">
+    android:orientation="horizontal"
+    tools:ignore="ExtraText">
 
     <Button
         android:id="@+id/utsav_permission_btn"
@@ -23,6 +24,44 @@
         android:src="@drawable/tiger1"
         android:layout_marginTop="70dp"
         />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/utsav_radiobtn"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <RadioButton
+                android:id="@+id/utsav_speed1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="speed one"
+                 />
+
+            <RadioButton
+                android:id="@+id/utsav_speed2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="speed two"
+                 />
+
+            <RadioButton
+                android:id="@+id/utsav_speed3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="speed three"
+                 />
+        </RadioGroup>
+    </LinearLayout>
+
+
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -50,6 +89,7 @@
 
 
     </LinearLayout>
+
 
 
 </RelativeLayout>
