@@ -35,28 +35,34 @@
         <RadioGroup
             android:id="@+id/utsav_radiobtn"
             android:layout_width="match_parent"
-            android:layout_height="200dp">
+            android:layout_height="250dp">
 
             <RadioButton
                 android:id="@+id/utsav_speed1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="speed one"
+                android:text="Speed One"
                  />
 
             <RadioButton
                 android:id="@+id/utsav_speed2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="speed two"
+                android:text="Speed Two"
                  />
 
             <RadioButton
                 android:id="@+id/utsav_speed3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="speed three"
+                android:text="Speed Three"
                  />
+            <RadioButton
+                android:id="@+id/utsav_speed4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Speed Four"
+                />
         </RadioGroup>
     </LinearLayout>
 

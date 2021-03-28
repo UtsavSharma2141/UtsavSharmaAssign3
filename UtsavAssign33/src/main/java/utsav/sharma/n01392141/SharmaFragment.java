@@ -141,6 +141,30 @@ public class SharmaFragment extends Fragment {
                             }
                         });
                         break;
+
+                    case R.id.utsav_speed4:
+                        ad.setOneShot(false);
+                        ad.addFrame(frame1, 50);
+                        ad.addFrame(frame2, 50);
+                        ad.addFrame(frame3, 50);
+                        ad.addFrame(frame4, 50);
+                        ad.addFrame(frame5, 50);
+                        ad.addFrame(frame6, 50);
+                        ad.addFrame(frame7, 50);
+                        ad.addFrame(frame8, 50);
+                        ad.addFrame(frame9, 50);
+                        ad.addFrame(frame10, 50);
+
+                        image.setImageDrawable(ad);
+                        btnstart.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                ad.setVisible(true,true);
+                                ad.start();
+
+                            }
+                        });
+                        break;
                     default:
                         break;
                 }

@@ -9,7 +9,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.view.animation.RotateAnimation;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -21,6 +23,8 @@ public class N01392141Fragment extends Fragment {
 
     TextView text_animation,text_animation2;
     Button start_animation,stop_animation;
+    Animation rotateanimation;
+    ImageView imageView;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -43,22 +47,26 @@ public class N01392141Fragment extends Fragment {
         text_animation2 = view.findViewById(R.id.utsav_tab3lname);
         start_animation = view.findViewById(R.id.utsav_start_animationBtn);
         stop_animation = view.findViewById(R.id.utsav_stop_animationBtn);
+        imageView = view.findViewById(R.id.utsav_earth);
+        rotateAnimation();
 
-        start_animation.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startAnimation();
-                startAnimation2();
-            }
-        });
 
-        stop_animation.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                stopAnimation();
-                stopAnimation2();
-            }
-        });
+
+//        start_animation.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                startAnimation();
+//                startAnimation2();
+//            }
+//        });
+//
+//        stop_animation.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                stopAnimation();
+//                stopAnimation2();
+//            }
+//        });
     }
     public void startAnimation(){
         Animation animation = AnimationUtils.loadAnimation(getActivity(), R.anim.anim);
@@ -78,5 +86,9 @@ public class N01392141Fragment extends Fragment {
     public void stopAnimation2(){
         Animation animation = AnimationUtils.loadAnimation(getActivity(), R.anim.anim2);
         text_animation2.clearAnimation();
+    }
+    private void rotateAnimation(){
+        rotateanimation = AnimationUtils.loadAnimation(getActivity(), R.anim.rotate);
+        imageView.startAnimation(rotateanimation);
     }
 }

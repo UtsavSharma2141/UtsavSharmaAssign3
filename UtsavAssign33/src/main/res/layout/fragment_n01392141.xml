@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/yellow"
+    android:background="@color/black"
     tools:context=".N01392141Fragment"
     tools:ignore="ExtraText">
 
@@ -13,8 +13,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Utsav"
-        android:gravity="left"
-        android:textAlignment="gravity"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="-55dp"
+        android:layout_marginTop="-108dp"
+        android:rotation="-45"
         android:textColor="@color/red"
         android:textSize="30dp"
         tools:ignore="MissingConstraints" />
@@ -26,9 +28,19 @@
         android:text="Sharma"
         android:textColor="@color/green"
         android:textSize="30dp"
+        android:layout_marginTop="-88dp"
+        android:layout_marginRight="-53dp"
         android:gravity="right"
-        android:textAlignment="gravity"
+        android:rotation="45"
+        android:layout_alignParentRight="true"
         tools:ignore="MissingConstraints"
+        />
+    <ImageView
+        android:id="@+id/utsav_earth"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:src="@drawable/earth"
+        android:layout_marginTop="140dp"
         />
 
     <Button
