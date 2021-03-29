@@ -1,3 +1,6 @@
+/*
+Utsav Sharma N01392141 Section C
+ */
 package utsav.sharma.n01392141;
 
 import android.content.Context;
@@ -7,9 +10,7 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Path;
 import android.graphics.PorterDuff;
-import android.graphics.PorterDuffXfermode;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 
@@ -34,11 +35,7 @@ public class CanvasView extends View {
     public CanvasView(Context c, AttributeSet attrs) {
         super(c, attrs);
         context = c;
-
-        // we set a new Path
         mPath = new Path();
-
-        // and we set a new Paint with the desired attributes
         mPaint = new Paint();
         mPaint.setAntiAlias(true);
         mPaint.setColor(Color.BLUE);
@@ -48,13 +45,10 @@ public class CanvasView extends View {
     }
 
     void changeValue(int color,float width){
-        //Paint mPaint;
 
         invalidate();
         mPaint.setColor(color);
         mPaint.setStrokeWidth(width);
-
-        Log.d("qwerty",String.valueOf(width));
     }
 
     void resetView(){
@@ -108,7 +102,6 @@ public class CanvasView extends View {
                 return false;
         }
 
-        // invalidate the view so that canvas is redrawn.
         invalidate();
         return true;
     }

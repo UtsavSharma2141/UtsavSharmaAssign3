@@ -13,7 +13,8 @@
         android:id="@+id/utsav_permission_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Permissions"
+        android:text="@string/permissions"
+        android:textStyle="bold"
         android:textColor="@color/black"
 
         />
@@ -41,27 +42,27 @@
                 android:id="@+id/utsav_speed1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Speed One"
+                android:text="@string/speed_one"
                  />
 
             <RadioButton
                 android:id="@+id/utsav_speed2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Speed Two"
+                android:text="@string/speed_two"
                  />
 
             <RadioButton
                 android:id="@+id/utsav_speed3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Speed Three"
+                android:text="@string/speed_three"
                  />
             <RadioButton
                 android:id="@+id/utsav_speed4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Speed Four"
+                android:text="@string/speed_four"
                 />
         </RadioGroup>
     </LinearLayout>
@@ -82,7 +83,8 @@
             android:layout_marginLeft="100dp"
             android:layout_marginRight="15dp"
             android:textColor="@color/black"
-            android:text="Start"/>
+            android:textStyle="bold"
+            android:text="@string/start_tab2"/>
 
         <Button
             android:id="@+id/utsav_stopBtn"
@@ -91,7 +93,8 @@
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
             android:textColor="@color/black"
-            android:text="Stop" />
+            android:textStyle="bold"
+            android:text="@string/stop_tab2" />
 
 
     </LinearLayout>

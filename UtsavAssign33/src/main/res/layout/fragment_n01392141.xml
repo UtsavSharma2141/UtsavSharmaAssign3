@@ -12,7 +12,7 @@
         android:id="@+id/utsav_tab3fname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Utsav"
+        android:text="@string/utsav_name"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="-55dp"
         android:layout_marginTop="-108dp"
@@ -25,7 +25,7 @@
         android:id="@+id/utsav_tab3lname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Sharma"
+        android:text="@string/sharma_text"
         android:textColor="@color/green"
         android:textSize="30dp"
         android:layout_marginTop="-88dp"
@@ -43,11 +43,21 @@
         android:layout_marginTop="140dp"
         />
 
+    <ImageView
+        android:id="@+id/utsav_moon"
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:src="@drawable/moon2"
+        android:layout_marginLeft="-500dp"
+        android:layout_marginTop="245dp"
+        />
+
     <Button
         android:id="@+id/utsav_start_animationBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Start Animation"
+        android:text="@string/start_animation"
+        android:textStyle="italic"
         android:layout_alignParentBottom="true"
         android:padding="5dp"
         android:layout_alignParentLeft="true"
@@ -57,7 +67,8 @@
         android:id="@+id/utsav_stop_animationBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Stop Animation"
+        android:text="@string/stop_animation"
+        android:textStyle="italic"
         android:padding="5dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"

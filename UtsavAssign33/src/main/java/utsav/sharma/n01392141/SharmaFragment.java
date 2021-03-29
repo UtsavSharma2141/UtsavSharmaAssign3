@@ -180,77 +180,19 @@ public class SharmaFragment extends Fragment {
         });
         }
 
-//        BitmapDrawable frame1 = (BitmapDrawable)getResources().getDrawable(R.drawable.tiger1);
-//        BitmapDrawable frame2 = (BitmapDrawable)getResources().getDrawable(R.drawable.tiger2);
-//        BitmapDrawable frame3 = (BitmapDrawable)getResources().getDrawable(R.drawable.tiger3);
-//        BitmapDrawable frame4 = (BitmapDrawable)getResources().getDrawable(R.drawable.tiger4);
-//        BitmapDrawable frame5 = (BitmapDrawable)getResources().getDrawable(R.drawable.tiger5);
-//        BitmapDrawable frame6 = (BitmapDrawable)getResources().getDrawable(R.drawable.tiger6);
-//        BitmapDrawable frame7 = (BitmapDrawable)getResources().getDrawable(R.drawable.tiger7);
-//        BitmapDrawable frame8 = (BitmapDrawable)getResources().getDrawable(R.drawable.tiger8);
-//        BitmapDrawable frame9 = (BitmapDrawable)getResources().getDrawable(R.drawable.tiger9);
-//        BitmapDrawable frame10 = (BitmapDrawable)getResources().getDrawable(R.drawable.tiger10);
-
-//        final AnimationDrawable ad = new AnimationDrawable();
-
-//        ad.addFrame(frame1,500);
-//        ad.addFrame(frame2,500);
-//        ad.addFrame(frame3,500);
-//        ad.addFrame(frame4,500);
-//        ad.addFrame(frame5,500);
-//        ad.addFrame(frame6,500);
-//        ad.addFrame(frame7,500);
-//        ad.addFrame(frame8,500);
-//        ad.addFrame(frame9,500);
-//        ad.addFrame(frame10,500);
-//
-//        image.setImageDrawable(ad);
-//
-//        btnstart.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                ad.start();
-//                ad.setOneShot(false);
-//            }
-//        });
-//
-//        btnstop.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                ad.stop();
-//            }
-//        });
-//
-//
-//    }
 
     private void requestPermissions() {
-        // below line is use to request
-        // permission in the current activity.
-        // this method is use to handle error
-// in runtime permissions
         Dexter.withActivity(getActivity())
-                // below line is use to request the number of
-                // permissions which are required in our app.
                 .withPermissions(Manifest.permission.CAMERA,
-                        // below is the list of permissions
                         Manifest.permission.ACCESS_FINE_LOCATION,
                         Manifest.permission.READ_CONTACTS)
-                // after adding permissions we are
-                // calling an with listener method.
                 .withListener(new MultiplePermissionsListener() {
                     @Override
                     public void onPermissionsChecked(MultiplePermissionsReport multiplePermissionsReport) {
-                        // this method is called when all permissions are granted
                         if (multiplePermissionsReport.areAllPermissionsGranted()) {
-                            // do you work now
                             Toast.makeText(getActivity(), "All the permissions are granted..", Toast.LENGTH_SHORT).show();
                         }
-                        // check for permanent denial of any permission
                         else{
-//                        else if (multiplePermissionsReport.isAnyPermissionPermanentlyDenied()) {
-                            // permission is denied permanently,
-                            // we will show user a dialog message.
                             showSettingsDialog();
                             Toast.makeText(getActivity(), "You need to give Permissions..", Toast.LENGTH_SHORT).show();
                         }
@@ -261,26 +203,14 @@ public class SharmaFragment extends Fragment {
 
                     }
                 }).withErrorListener(error -> {
-                    // we are displaying a toast message for error message.
                     Toast.makeText(getActivity(), "Error occurred! Please go to settings to grant permissions ", Toast.LENGTH_SHORT).show();
                 })
-                // below line is use to run the permissions
-                // on same thread and to check the permissions
                 .onSameThread().check();
     }
 
-    // below is the shoe setting dialog
-    // method which is use to display a
-    // dialogue message.
     private void showSettingsDialog() {
-        // we are displaying an alert dialog for permissions
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-
-        // below line is the title
-        // for our alert dialog.
         builder.setTitle("Need Permissions");
-
-        // below line is our message for our dialog
         builder.setMessage("This app needs permission to use this feature.");
         builder.setPositiveButton("GOTO SETTINGS", new DialogInterface.OnClickListener() {
            @Override
@@ -295,13 +225,10 @@ public class SharmaFragment extends Fragment {
         builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                // this method is called when
-                // user click on negative button.
+
                 dialog.cancel();
             }
         });
-        // below line is used
-        // to display our dialog
         builder.show();
     }
 

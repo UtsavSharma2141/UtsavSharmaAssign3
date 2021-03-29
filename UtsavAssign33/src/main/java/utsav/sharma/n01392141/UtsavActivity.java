@@ -3,15 +3,15 @@ Utsav Sharma N01392141 Section C
  */
 package utsav.sharma.n01392141;
 
+import android.content.DialogInterface;
+import android.os.Bundle;
+import android.view.MenuItem;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
-
-import android.content.DialogInterface;
-import android.os.Bundle;
-import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -33,15 +33,15 @@ public class UtsavActivity extends AppCompatActivity {
                 int id = menuItem.getItemId();
                 if (id == R.id.utsav_nav_tab1){
                     setFragment(utsavFragment);
-                    getSupportActionBar().setTitle("Tab1  Utsav Sharma N01392141");
+                    getSupportActionBar().setTitle(R.string.tab1_title);
                     return true;
                 } else if (id == R.id.utsav_nav_tab2){
                     setFragment(sharmaFragment);
-                    getSupportActionBar().setTitle("Tab2  Utsav Sharma N01392141");
+                    getSupportActionBar().setTitle(R.string.tab2_title);
                     return true;
                 } else if(id == R.id.utsav_nav_tab3){
                     setFragment(N01392141Fragment);
-                    getSupportActionBar().setTitle("Tab3  Utsav Sharma N01392141");
+                    getSupportActionBar().setTitle(R.string.tab3_title);
                     return true;
                 }
                 return false;

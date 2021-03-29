@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <set xmlns:android="http://schemas.android.com/apk/res/android">
-        <rotate
 
-            android:fromDegrees="0"
-            android:toDegrees="45"
-            android:duration="2000"
+        <translate
+            android:toXDelta="1500"
+            android:fromXDelta="0"
+            android:toYDelta="50"
+            android:fromYDelta="0"
+
             android:repeatCount="infinite"
-
-
-            />
+            android:duration="3000"/>
 </set>

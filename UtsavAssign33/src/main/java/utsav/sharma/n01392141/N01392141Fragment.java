@@ -9,7 +9,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import android.view.animation.RotateAnimation;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -24,7 +23,7 @@ public class N01392141Fragment extends Fragment {
     TextView text_animation,text_animation2;
     Button start_animation,stop_animation;
     Animation rotateanimation;
-    ImageView imageView;
+    ImageView imageView,image2;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -48,45 +47,40 @@ public class N01392141Fragment extends Fragment {
         start_animation = view.findViewById(R.id.utsav_start_animationBtn);
         stop_animation = view.findViewById(R.id.utsav_stop_animationBtn);
         imageView = view.findViewById(R.id.utsav_earth);
-        rotateAnimation();
+        image2 = view.findViewById(R.id.utsav_moon);
 
 
 
-//        start_animation.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                startAnimation();
-//                startAnimation2();
-//            }
-//        });
-//
-//        stop_animation.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                stopAnimation();
-//                stopAnimation2();
-//            }
-//        });
+
+        start_animation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                rotateAnimation();
+                startAnimation();
+
+            }
+        });
+
+        stop_animation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                stopAnimation();
+
+            }
+        });
     }
     public void startAnimation(){
         Animation animation = AnimationUtils.loadAnimation(getActivity(), R.anim.anim);
-        text_animation.startAnimation(animation);
+        image2.startAnimation(animation);
     }
 
-    public void startAnimation2(){
-        Animation animation = AnimationUtils.loadAnimation(getActivity(), R.anim.anim2);
-        text_animation2.startAnimation(animation);
-    }
 
     public void stopAnimation(){
         Animation animation = AnimationUtils.loadAnimation(getActivity(), R.anim.anim);
-        text_animation.clearAnimation();
+        image2.clearAnimation();
+        imageView.clearAnimation();
     }
 
-    public void stopAnimation2(){
-        Animation animation = AnimationUtils.loadAnimation(getActivity(), R.anim.anim2);
-        text_animation2.clearAnimation();
-    }
     private void rotateAnimation(){
         rotateanimation = AnimationUtils.loadAnimation(getActivity(), R.anim.rotate);
         imageView.startAnimation(rotateanimation);

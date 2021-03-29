@@ -10,29 +10,29 @@
     <string name="tab2_nav_menu">Tab2</string>
     <string name="tab3_nav_menu">Tab3</string>
     <string name="builder_exit_message">Utsav Sharma N01392141</string>
-    <string name="yes_msg">Yes</string>
-    <string name="no_msg">No</string>
-    <string name="set_btn">set</string>
-    <string name="reset_btn">reset</string>
+    <string name="yes_msg">Oui</string>
+    <string name="no_msg">non</string>
+    <string name="set_btn">ensemble</string>
+    <string name="reset_btn">réinitialiser</string>
     <string name="tab1_title">Tab1  Utsav Sharma N01392141</string>
     <string name="tab2_title">Tab2  Utsav Sharma N01392141</string>
     <string name="tab3_title">Tab3  Utsav Sharma N01392141</string>
-    <string name="start_animation">Start Animation</string>
-    <string name="stop_animation">Stop Animation</string>
+    <string name="start_animation">Lancer lanimation</string>
+    <string name="stop_animation">Arrêter lanimation</string>
     <string name="utsav_name">Utsav</string>
-    <string name="permissions">Permissions</string>
-    <string name="speed_one">Speed One</string>
-    <string name="speed_two">Speed Two</string>
-    <string name="speed_three">Speed Three</string>
-    <string name="speed_four">Speed Four</string>
-    <string name="start_tab2">Start</string>
-    <string name="stop_tab2">Stop</string>
+    <string name="permissions">Autorisations</string>
+    <string name="speed_one">Vitesse un</string>
+    <string name="speed_two">Vitesse deux</string>
+    <string name="speed_three">Vitesse trois</string>
+    <string name="speed_four">Vitesse quatre</string>
+    <string name="start_tab2">Démarrer</string>
+    <string name="stop_tab2">arrêter</string>
     <string name="sharma_text">Sharma</string>
 
     <string-array name="colorsArr">
-        <item>Blue</item>
-        <item>Red</item>
-        <item>Yellow</item>
+        <item>bleue</item>
+        <item>rouge</item>
+        <item>Jaune</item>
     </string-array>
 
     <string-array name="widthArr">
